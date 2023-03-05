@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0778FD29B42B8000C19883 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0778FC29B42B8000C19883 /* HexagonView.swift */; };
+		FF0778FF29B434F700C19883 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0778FE29B434F700C19883 /* BlobView.swift */; };
 		FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */; };
 		FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B1029AEFA75002B1322 /* ContentView.swift */; };
 		FF6A5B1329AEFA77002B1322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6A5B1229AEFA77002B1322 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF0778FC29B42B8000C19883 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		FF0778FE29B434F700C19883 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		FF6A5B0B29AEFA75002B1322 /* DesignCodeIOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeIOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeIOS15App.swift; sourceTree = "<group>"; };
 		FF6A5B1029AEFA75002B1322 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				FF6A5B1229AEFA77002B1322 /* Assets.xcassets */,
 				FF6A5B1429AEFA77002B1322 /* Preview Content */,
 				FFFD3A6929B218C000087577 /* Styles.swift */,
+				FF0778FC29B42B8000C19883 /* HexagonView.swift */,
+				FF0778FE29B434F700C19883 /* BlobView.swift */,
 			);
 			path = DesignCodeIOS15;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFD3A6C29B2216900087577 /* AccountView.swift in Sources */,
+				FF0778FD29B42B8000C19883 /* HexagonView.swift in Sources */,
 				FFFD3A6A29B218C000087577 /* Styles.swift in Sources */,
+				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
 				FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */,
 			);
