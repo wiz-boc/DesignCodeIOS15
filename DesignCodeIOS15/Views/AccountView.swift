@@ -37,6 +37,11 @@ struct AccountView: View {
                     HexagonView()
                         .offset(x: -50, y: -100)
                 )
+                .background {
+                    BlobView()
+                        .offset(x: 200, y:0)
+                        .scaleEffect(0.6)
+                }
             Text("Kenroy Wizz")
                 .font(.title.weight(.semibold))
             HStack {
@@ -52,13 +57,13 @@ struct AccountView: View {
     
     var menu: some View {
         Section {
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: HomeView()) {
                 Label("Settings", systemImage: "gear")
             }
             NavigationLink { Text("Billing") } label: {
                 Label("Billing", systemImage: "creditcard")
             }
-            NavigationLink { ContentView() } label: {
+            NavigationLink { HomeView() } label: {
                 Label("Help", systemImage: "questionmark")
             }
             

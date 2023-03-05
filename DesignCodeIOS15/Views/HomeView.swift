@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  DesignCodeIOS15
 //
-//  Created by wizz on 2/28/23.
+//  Created by wizz on 3/5/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -52,14 +52,11 @@ struct ContentView: View {
             Image("Illustration 5")
                 .resizable().aspectRatio(contentMode: .fit).frame(height: 230).offset(x:32,y: -80)
         )
-    }
+    }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        ContentView()
-            .preferredColorScheme(.dark)
-            .previewDevice("iPhone 13 mini")
+        HomeView()
     }
 }
