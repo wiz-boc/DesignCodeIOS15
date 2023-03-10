@@ -13,6 +13,8 @@
 		FF07790329B510B000C19883 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790229B510B000C19883 /* Tab.swift */; };
 		FF07790529B5261A00C19883 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790429B5261A00C19883 /* HomeView.swift */; };
 		FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */; };
+		FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */; };
+		FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733629BBD3DA00308FB3 /* Course.swift */; };
 		FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */; };
 		FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B1029AEFA75002B1322 /* ContentView.swift */; };
 		FF6A5B1329AEFA77002B1322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6A5B1229AEFA77002B1322 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		FF07790229B510B000C19883 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		FF07790429B5261A00C19883 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		FF2A733629BBD3DA00308FB3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FF6A5B0B29AEFA75002B1322 /* DesignCodeIOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeIOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeIOS15App.swift; sourceTree = "<group>"; };
 		FF6A5B1029AEFA75002B1322 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				FF07790229B510B000C19883 /* Tab.swift */,
 				FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */,
+				FF2A733629BBD3DA00308FB3 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FFFD3A6929B218C000087577 /* Styles.swift */,
+				FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -215,10 +221,12 @@
 				FF8DA57729B97F60001A5B15 /* NavigationBar.swift in Sources */,
 				FFFD3A6A29B218C000087577 /* Styles.swift in Sources */,
 				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
+				FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
 				FF8DA57529B97E79001A5B15 /* FeaturedItem.swift in Sources */,
 				FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */,
 				FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */,
+				FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
