@@ -13,6 +13,9 @@
 		FF07790329B510B000C19883 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790229B510B000C19883 /* Tab.swift */; };
 		FF07790529B5261A00C19883 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790429B5261A00C19883 /* HomeView.swift */; };
 		FF2266D429BD664700E78C9D /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D329BD664700E78C9D /* MatchedView.swift */; };
+		FF2266D629BE548C00E78C9D /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D529BE548C00E78C9D /* CourseItem.swift */; };
+		FF2266D829BE55C100E78C9D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D729BE55C100E78C9D /* CourseView.swift */; };
+		FF2266DA29BE5BBE00E78C9D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D929BE5BBE00E78C9D /* Animations.swift */; };
 		FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */; };
 		FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */; };
 		FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733629BBD3DA00308FB3 /* Course.swift */; };
@@ -33,6 +36,9 @@
 		FF07790229B510B000C19883 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		FF07790429B5261A00C19883 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FF2266D329BD664700E78C9D /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		FF2266D529BE548C00E78C9D /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		FF2266D729BE55C100E78C9D /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		FF2266D929BE5BBE00E78C9D /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		FF2A733629BBD3DA00308FB3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				FFFD3A6B29B2216900087577 /* AccountView.swift */,
 				FF07790429B5261A00C19883 /* HomeView.swift */,
 				FF2266D329BD664700E78C9D /* MatchedView.swift */,
+				FF2266D729BE55C100E78C9D /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 				FF0778FC29B42B8000C19883 /* HexagonView.swift */,
 				FF0778FE29B434F700C19883 /* BlobView.swift */,
 				FF8DA57429B97E79001A5B15 /* FeaturedItem.swift */,
+				FF2266D529BE548C00E78C9D /* CourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 			children = (
 				FFFD3A6929B218C000087577 /* Styles.swift */,
 				FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */,
+				FF2266D929BE5BBE00E78C9D /* Animations.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 			files = (
 				FF07790529B5261A00C19883 /* HomeView.swift in Sources */,
 				FF07790129B4E25F00C19883 /* TabBar.swift in Sources */,
+				FF2266D829BE55C100E78C9D /* CourseView.swift in Sources */,
 				FFFD3A6C29B2216900087577 /* AccountView.swift in Sources */,
 				FF0778FD29B42B8000C19883 /* HexagonView.swift in Sources */,
 				FF2266D429BD664700E78C9D /* MatchedView.swift in Sources */,
@@ -227,7 +237,9 @@
 				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
 				FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
+				FF2266D629BE548C00E78C9D /* CourseItem.swift in Sources */,
 				FF8DA57529B97E79001A5B15 /* FeaturedItem.swift in Sources */,
+				FF2266DA29BE5BBE00E78C9D /* Animations.swift in Sources */,
 				FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */,
 				FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */,
 				FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */,

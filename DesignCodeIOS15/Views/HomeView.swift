@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
+    @State var showStatusBar = true
+    
     var body: some View {
         ZStack {
             Color("Background")
@@ -16,7 +20,21 @@ struct HomeView: View {
             ScrollView {
                 scrollDetection
                 featured
-                Color.clear.frame(height: 1000)
+                Text("Courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
+                if !show {
+                    CourseItem(namespace: namespace, show: $show)
+                        .onTapGesture {
+                            withAnimation(.openCard) {
+                                show.toggle()
+                                showStatusBar = false
+                            }
+                        }
+                }
+                
             }
             .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top, content: {
@@ -24,7 +42,21 @@ struct HomeView: View {
             })
             .overlay {
                 NavigationBar(title: "Feature", hasScrolled: $hasScrolled)
+            }
+            if show {
+                CourseView(namespace: namespace, show: $show)
+            }
         }
+        .statusBar(hidden: !showStatusBar)
+        .onChange(of: show) { newValue in
+            withAnimation(.closeCard) {
+                if newValue {
+                    showStatusBar = false
+                } else {
+                    showStatusBar = true
+                }
+            }
+            
         }
     }
     
