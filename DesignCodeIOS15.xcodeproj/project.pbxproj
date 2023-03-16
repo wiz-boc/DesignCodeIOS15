@@ -16,6 +16,7 @@
 		FF2266D629BE548C00E78C9D /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D529BE548C00E78C9D /* CourseItem.swift */; };
 		FF2266D829BE55C100E78C9D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D729BE55C100E78C9D /* CourseView.swift */; };
 		FF2266DA29BE5BBE00E78C9D /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D929BE5BBE00E78C9D /* Animations.swift */; };
+		FF2266DC29C2B80B00E78C9D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266DB29C2B80A00E78C9D /* Model.swift */; };
 		FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */; };
 		FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */; };
 		FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733629BBD3DA00308FB3 /* Course.swift */; };
@@ -39,6 +40,7 @@
 		FF2266D529BE548C00E78C9D /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		FF2266D729BE55C100E78C9D /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		FF2266D929BE5BBE00E78C9D /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		FF2266DB29C2B80A00E78C9D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		FF2A733629BBD3DA00308FB3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FF07790229B510B000C19883 /* Tab.swift */,
 				FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */,
 				FF2A733629BBD3DA00308FB3 /* Course.swift */,
+				FF2266DB29C2B80A00E78C9D /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				FF8DA57529B97E79001A5B15 /* FeaturedItem.swift in Sources */,
 				FF2266DA29BE5BBE00E78C9D /* Animations.swift in Sources */,
 				FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */,
+				FF2266DC29C2B80B00E78C9D /* Model.swift in Sources */,
 				FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */,
 				FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */,
 			);
