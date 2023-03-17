@@ -14,6 +14,7 @@ struct CourseView: View {
     @State var appear = [false,false,false]
     @EnvironmentObject var model: Model
     @State var viewState: CGSize = .zero
+    @State var isDraggable = true
     
     var body: some View {
         ZStack {
@@ -32,19 +33,7 @@ struct CourseView: View {
             .scaleEffect(viewState.width / -500 + 1)
             .background(.black.opacity(viewState.width / 500))
             .background(.ultraThinMaterial)
-            .gesture(
-                DragGesture()
-                    .onChanged({ value in
-                        guard value.translation.width > 0 else { return }
-                        viewState = value.translation
-                    })
-                    .onEnded({ value in
-                        withAnimation(.closeCard) {
-                            viewState = .zero
-                        }
-                    })
-                
-            )
+            .gesture(isDraggable ? drag : nil)
             .ignoresSafeArea()
             
             button
@@ -71,6 +60,8 @@ struct CourseView: View {
                 Image(course.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .padding(20)
+                    .frame(maxWidth: 500)
                     .matchedGeometryEffect(id: "image\(course.id)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY * -0.8 : 0)
             )
@@ -84,14 +75,14 @@ struct CourseView: View {
                     .blur(radius: scrollY / 10)
             )
             .mask {
-                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                RoundedRectangle(cornerRadius: appear[0] ? 0 : 30, style: .continuous)
                     .matchedGeometryEffect(id: "mask\(course.id)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             }
             .overlay(content: {
                 overlayContent
                     .offset(y: scrollY > 0 ? -scrollY * -0.6 : 0)
-        })
+            })
         }
         .frame(height: 500)
     }
@@ -175,6 +166,36 @@ struct CourseView: View {
         .ignoresSafeArea()
     }
     
+    var drag: some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local)
+            .onChanged({ value in
+                guard value.translation.width > 0 else { return }
+                if value.startLocation.x < 100 {
+                    withAnimation(.closeCard) {
+                        viewState = value.translation
+                    }
+                    
+                }
+                
+                if viewState.width > 120 {
+                    close()
+                }
+                
+            })
+            .onEnded({ value in
+                
+                if viewState.width > 80 {
+                    close()
+                } else {
+                    withAnimation(.closeCard) {
+                        viewState = .zero
+                    }
+                }
+                
+                
+            })
+    }
+    
     //MARK:- functions
     
     func fadeIn(){
@@ -193,6 +214,18 @@ struct CourseView: View {
         appear[0] = false
         appear[1] = false
         appear[2] = false
+    }
+    
+    func close(){
+        withAnimation(.closeCard.delay(0.3)) {
+            show.toggle()
+            model.showDetail.toggle()
+        }
+        
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        isDraggable = false
     }
 }
 
