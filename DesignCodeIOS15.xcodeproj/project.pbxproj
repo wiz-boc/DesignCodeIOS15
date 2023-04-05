@@ -31,6 +31,9 @@
 		FFB4FC5129CCC694001887BA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4FC5029CCC693001887BA /* SignUpView.swift */; };
 		FFB4FC5329CCCC3D001887BA /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4FC5229CCCC3D001887BA /* AngularButtonStyle.swift */; };
 		FFE60D3629C5622800E59A28 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE60D3529C5622800E59A28 /* Suggestion.swift */; };
+		FFE8E07E29DD152300DBC2A9 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8E07D29DD152300DBC2A9 /* AvatarView.swift */; };
+		FFF697DD29DC4728002DD322 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF697DC29DC4728002DD322 /* ModalView.swift */; };
+		FFF697DF29DC47A1002DD322 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF697DE29DC47A1002DD322 /* SignInView.swift */; };
 		FFFD3A6A29B218C000087577 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD3A6929B218C000087577 /* Styles.swift */; };
 		FFFD3A6C29B2216900087577 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD3A6B29B2216900087577 /* AccountView.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		FFB4FC5029CCC693001887BA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FFB4FC5229CCCC3D001887BA /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		FFE60D3529C5622800E59A28 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		FFE8E07D29DD152300DBC2A9 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		FFF697DC29DC4728002DD322 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		FFF697DE29DC47A1002DD322 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FFFD3A6929B218C000087577 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		FFFD3A6B29B2216900087577 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +100,7 @@
 				FF2266D329BD664700E78C9D /* MatchedView.swift */,
 				FF2266D729BE55C100E78C9D /* CourseView.swift */,
 				FF76C22929C4B70200587D7C /* SearchView.swift */,
-				FFB4FC5029CCC693001887BA /* SignUpView.swift */,
+				FFE8E07C29DD104600DBC2A9 /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 				FF0778FE29B434F700C19883 /* BlobView.swift */,
 				FF8DA57429B97E79001A5B15 /* FeaturedItem.swift */,
 				FF2266D529BE548C00E78C9D /* CourseItem.swift */,
+				FFE8E07D29DD152300DBC2A9 /* AvatarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -171,6 +178,16 @@
 				FF6A5B1529AEFA77002B1322 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFE8E07C29DD104600DBC2A9 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4FC5029CCC693001887BA /* SignUpView.swift */,
+				FFF697DC29DC4728002DD322 /* ModalView.swift */,
+				FFF697DE29DC47A1002DD322 /* SignInView.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +267,13 @@
 				FFFD3A6C29B2216900087577 /* AccountView.swift in Sources */,
 				FFE60D3629C5622800E59A28 /* Suggestion.swift in Sources */,
 				FF0778FD29B42B8000C19883 /* HexagonView.swift in Sources */,
+				FFE8E07E29DD152300DBC2A9 /* AvatarView.swift in Sources */,
 				FF2266D429BD664700E78C9D /* MatchedView.swift in Sources */,
 				FF07790329B510B000C19883 /* Tab.swift in Sources */,
 				FF8DA57729B97F60001A5B15 /* NavigationBar.swift in Sources */,
 				FFB4FC5329CCCC3D001887BA /* AngularButtonStyle.swift in Sources */,
 				FFFD3A6A29B218C000087577 /* Styles.swift in Sources */,
+				FFF697DF29DC47A1002DD322 /* SignInView.swift in Sources */,
 				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
 				FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
@@ -267,6 +286,7 @@
 				FF2266DC29C2B80B00E78C9D /* Model.swift in Sources */,
 				FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */,
 				FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */,
+				FFF697DD29DC4728002DD322 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
