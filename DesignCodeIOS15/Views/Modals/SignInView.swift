@@ -23,6 +23,7 @@ struct SignInView: View {
     @State var appear = [false, false, false]
     
     @EnvironmentObject var model: Model
+    @AppStorage("isLogged") var isLogged = true
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -61,7 +62,9 @@ struct SignInView: View {
                 }
             
             
-            Button {} label: {
+            Button {
+                isLogged = true
+            } label: {
                 Text("Sign in")
                     .frame(maxWidth: .infinity)
             }
