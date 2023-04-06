@@ -15,6 +15,8 @@ struct CourseView: View {
     @EnvironmentObject var model: Model
     @State var viewState: CGSize = .zero
     @State var isDraggable = true
+    @State var showSection = false
+    @State var selectedIndex = 0
     
     var body: some View {
         ZStack {
@@ -131,24 +133,22 @@ struct CourseView: View {
     }
     
     var content: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            Text("SwiftUI is hands-down the best way for designers to take a firstt step into code")
-                .font(.title3).fontWeight(.medium)
-            
-            Text("This course")
-                .font(.title3).bold()
-            
-            Text("askdnsajlk andlskdna lknadlas dlajsdliasjd ljadoijasd lajdopsjd ojodjad oaljsdopajsd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln aedd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln")
-            
-            Text("askdnsajlk andlskdna lknadlas dlajsdliasjd ljadoijasd lajdopsjd ojodjad oaljsdopajsd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln aedd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln")
-                .font(.title).bold()
-            
-            Text("Mutliplatform app ")
-                .font(.title).bold()
-            
-            Text("askdnsajlk andlskdna lknadlas dlajsdliasjd ljadoijasd lajdopsjd ojodjad oaljsdopajsd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln aedd osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln osd jaopsd ;ojsdpo ;pjasdojsadnadlsdjosjd;padnspjdhasdn opasdnasdbfboeidfln")
+        VStack(alignment: .leading) {
+            ForEach(Array(courseSections.enumerated()), id: \.offset){  index, section in
+                if index != 0 { Divider() }
+                SectionRow(section: section)
+                    .onTapGesture {
+                        selectedIndex = index
+                        showSection = true
+                    }
+            }
         }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .strokeStyle(cornerRadius: 30)
         .padding(20)
+        .sheet(isPresented: $showSection) {
+            SectionView(section: courseSections[selectedIndex])
+        }
     }
     
     var button: some View {

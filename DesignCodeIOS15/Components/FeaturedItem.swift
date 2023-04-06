@@ -48,7 +48,7 @@ struct FeaturedItem: View {
         //.cornerRadius(30)
         //.mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         
-        //.modifier(StrokeStyle())
+        //.modifier(StrokeModifier())
         .strokeStyle()
         .padding(.horizontal, 20)
     }
