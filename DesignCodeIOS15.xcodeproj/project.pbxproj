@@ -12,6 +12,8 @@
 		FF07790129B4E25F00C19883 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790029B4E25F00C19883 /* TabBar.swift */; };
 		FF07790329B510B000C19883 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790229B510B000C19883 /* Tab.swift */; };
 		FF07790529B5261A00C19883 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07790429B5261A00C19883 /* HomeView.swift */; };
+		FF0E524F29DE7DB4007F7CEE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E524E29DE7DB4007F7CEE /* Address.swift */; };
+		FF0E525129DE7F53007F7CEE /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0E525029DE7F53007F7CEE /* Coin.swift */; };
 		FF2266D429BD664700E78C9D /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D329BD664700E78C9D /* MatchedView.swift */; };
 		FF2266D629BE548C00E78C9D /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D529BE548C00E78C9D /* CourseItem.swift */; };
 		FF2266D829BE55C100E78C9D /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2266D729BE55C100E78C9D /* CourseView.swift */; };
@@ -44,6 +46,8 @@
 		FF07790029B4E25F00C19883 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FF07790229B510B000C19883 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		FF07790429B5261A00C19883 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF0E524E29DE7DB4007F7CEE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		FF0E525029DE7F53007F7CEE /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		FF2266D329BD664700E78C9D /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		FF2266D529BE548C00E78C9D /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		FF2266D729BE55C100E78C9D /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				FF2A733629BBD3DA00308FB3 /* Course.swift */,
 				FF2266DB29C2B80A00E78C9D /* Model.swift */,
 				FFE60D3529C5622800E59A28 /* Suggestion.swift */,
+				FF0E524E29DE7DB4007F7CEE /* Address.swift */,
+				FF0E525029DE7F53007F7CEE /* Coin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				FF2266D829BE55C100E78C9D /* CourseView.swift in Sources */,
 				FFFD3A6C29B2216900087577 /* AccountView.swift in Sources */,
 				FFE60D3629C5622800E59A28 /* Suggestion.swift in Sources */,
+				FF0E524F29DE7DB4007F7CEE /* Address.swift in Sources */,
 				FF0778FD29B42B8000C19883 /* HexagonView.swift in Sources */,
 				FFE8E07E29DD152300DBC2A9 /* AvatarView.swift in Sources */,
 				FF2266D429BD664700E78C9D /* MatchedView.swift in Sources */,
@@ -274,6 +281,7 @@
 				FFB4FC5329CCCC3D001887BA /* AngularButtonStyle.swift in Sources */,
 				FFFD3A6A29B218C000087577 /* Styles.swift in Sources */,
 				FFF697DF29DC47A1002DD322 /* SignInView.swift in Sources */,
+				FF0E525129DE7F53007F7CEE /* Coin.swift in Sources */,
 				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
 				FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
