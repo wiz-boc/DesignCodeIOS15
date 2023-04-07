@@ -26,6 +26,9 @@
 		FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */; };
 		FF2A733529BBD0E600308FB3 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */; };
 		FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A733629BBD3DA00308FB3 /* Course.swift */; };
+		FF5AC21729E075660035C6E9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5AC21629E075660035C6E9 /* NotificationsView.swift */; };
+		FF5AC21929E076240035C6E9 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5AC21829E076240035C6E9 /* LibraryView.swift */; };
+		FF5AC21B29E0767F0035C6E9 /* CertifcateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5AC21A29E0767F0035C6E9 /* CertifcateView.swift */; };
 		FF6A5B0F29AEFA75002B1322 /* DesignCodeIOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */; };
 		FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A5B1029AEFA75002B1322 /* ContentView.swift */; };
 		FF6A5B1329AEFA77002B1322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6A5B1229AEFA77002B1322 /* Assets.xcassets */; };
@@ -71,6 +74,9 @@
 		FF2A733229BADAFE00308FB3 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		FF2A733429BBD0E600308FB3 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		FF2A733629BBD3DA00308FB3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		FF5AC21629E075660035C6E9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		FF5AC21829E076240035C6E9 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		FF5AC21A29E0767F0035C6E9 /* CertifcateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifcateView.swift; sourceTree = "<group>"; };
 		FF6A5B0B29AEFA75002B1322 /* DesignCodeIOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeIOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6A5B0E29AEFA75002B1322 /* DesignCodeIOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeIOS15App.swift; sourceTree = "<group>"; };
 		FF6A5B1029AEFA75002B1322 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				FFBF6B5029E063F600AD055C /* Graphics */,
 				FFBF6B4E29E063D400AD055C /* items */,
 				FFBF6B4F29E063EA00AD055C /* Buttons */,
+				FF5AC21A29E0767F0035C6E9 /* CertifcateView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -213,6 +220,8 @@
 			children = (
 				FF07790429B5261A00C19883 /* HomeView.swift */,
 				FFFC483629DF9095008D4996 /* ExploreView.swift */,
+				FF5AC21629E075660035C6E9 /* NotificationsView.swift */,
+				FF5AC21829E076240035C6E9 /* LibraryView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF76C22A29C4B70200587D7C /* SearchView.swift in Sources */,
+				FF5AC21729E075660035C6E9 /* NotificationsView.swift in Sources */,
 				FF07790529B5261A00C19883 /* HomeView.swift in Sources */,
 				FF0E525929DF47C9007F7CEE /* SectionView.swift in Sources */,
 				FF07790129B4E25F00C19883 /* TabBar.swift in Sources */,
@@ -374,12 +384,14 @@
 				FFFC483929DF9162008D4996 /* SmallCourseItem.swift in Sources */,
 				FF0778FF29B434F700C19883 /* BlobView.swift in Sources */,
 				FF2A733729BBD3DA00308FB3 /* Course.swift in Sources */,
+				FF5AC21929E076240035C6E9 /* LibraryView.swift in Sources */,
 				FF6A5B1129AEFA75002B1322 /* ContentView.swift in Sources */,
 				FF2266D629BE548C00E78C9D /* CourseItem.swift in Sources */,
 				FF8DA57529B97E79001A5B15 /* FeaturedItem.swift in Sources */,
 				FFB4FC5129CCC694001887BA /* SignUpView.swift in Sources */,
 				FF0E525729DF4580007F7CEE /* SectionRow.swift in Sources */,
 				FF2266DA29BE5BBE00E78C9D /* Animations.swift in Sources */,
+				FF5AC21B29E0767F0035C6E9 /* CertifcateView.swift in Sources */,
 				FF2A733329BADAFE00308FB3 /* PreferenceKeys.swift in Sources */,
 				FF91FA6B29D45CD800DD37AF /* InputStyle.swift in Sources */,
 				FFBF6B4829E0612A00AD055C /* Topic.swift in Sources */,

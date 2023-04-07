@@ -21,9 +21,9 @@ struct ContentView: View {
                     case .explore:
                         ExploreView()
                     case .notification:
-                        AccountView()
+                        NotificationsView()
                     case .library:
-                        AccountView()
+                        LibraryView()
                 }
             TabBar()
                 .offset(y: model.showDetail ? 200 : 0)
@@ -31,10 +31,11 @@ struct ContentView: View {
             if showModal {
                 ModalView()
                     .zIndex(1)
+                    .accessibilityAddTraits(.isModal)
             }
         }
         .safeAreaInset(edge: .bottom) {
-            Color.clear.frame(height: 44)
+            Color.clear.frame(height: 88)
         }
         .dynamicTypeSize(.large ... .xxLarge)
     }

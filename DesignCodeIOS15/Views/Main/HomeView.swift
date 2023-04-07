@@ -112,6 +112,7 @@ struct HomeView: View {
                             showCourse = true
                             selectedIndex = index
                         }
+                        .accessibilityElement(children: .combine)
                     
                     //Text("\(proxy.frame(in: .global).minX)")
                 }
@@ -119,7 +120,7 @@ struct HomeView: View {
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 420)
-        .background(Image("Blob 1").offset(x:250,y: -100))
+        .background(Image("Blob 1").offset(x:250,y: -100).accessibility(hidden: true))
         .sheet(isPresented: $showCourse) {
             CourseView(namespace: namespace, course: featuredCourses[selectedIndex] ,show: $showCourse)
         }
@@ -136,6 +137,8 @@ struct HomeView: View {
                         selectedId = course.id
                     }
                 }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(.isButton)
         }
     }
     
